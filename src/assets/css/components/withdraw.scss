@@ -1,0 +1,18 @@
+
+.withdraw {
+  max-width: 825px;
+  margin: auto;
+  padding: 30px;
+  background: rgba($white, 0.6);
+
+  &-form {
+    &__revers {
+      margin-top: 4px;
+      margin-bottom: 4px;
+      margin-left: 30px;
+    }
+    &__btns {
+      margin-top: 30px;
+    }
+  }
+}

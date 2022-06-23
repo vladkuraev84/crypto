@@ -1,0 +1,10 @@
+{
+  "title": "test title!",
+  "dashboard": {
+    "withdraw": "Withdraw ",
+    "your": "your ",
+    "crypto": "crypto ",
+    "inYourLocalCur": "in your local currency ",
+    "instantly": "instantly"
+  }
+}

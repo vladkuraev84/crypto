@@ -1,0 +1,75 @@
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/transition";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+@import "utils/button";
+@import "utils/input";
+
+@import "pages/general";
+@import "pages/dashboard";
+@import "pages/deposit";
+@import "pages/settings";
+@import "pages/market";
+@import "pages/cashOut";
+
+@import "components/theHeader";
+@import "components/headerSteps";
+@import "components/menu";
+@import "components/nav";
+@import "components/dropdown";
+@import "components/withdraw";
+
+@import "components/user/base";
+
+*{
+  outline:none;
+  padding: 0;
+  margin: 0;
+}
+
+#app, .wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  width:100vw;
+  min-height: 100vh;
+  padding:0;
+  margin:0;
+  display:block;
+  position:relative;
+  background: $bgContent;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media screen and (min-width: 901px){
+    padding: 0 15px;
+  }
+
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 30px;
+
+  background-image: url("~@/assets/img/bg.svg");
+  background-position: 0 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 900px){
+    padding-right: 30px;
+  }
+}
+

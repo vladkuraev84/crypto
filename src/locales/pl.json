@@ -1,0 +1,10 @@
+{
+  "title": "tytuł testu",
+  "dashboard": {
+    "withdraw": "Wypłać ",
+    "your": "swoje ",
+    "crypto": "krypto ",
+    "inYourLocalCur": "w lokalnej walucie ",
+    "instantly": "natychmiast"
+  }
+}

@@ -1,0 +1,188 @@
+
+html {
+  font-size: 16px;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: 'HindMadurai', sans-serif;
+  font-weight: 400;
+  color: $dark;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $pink;
+  border-radius: 0;
+}
+
+p {
+  line-height: 1.375;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'IBMPlexSans', sans-serif;
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 40px;
+
+  &-sub {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+a, button {
+  transition: all 0.3s ease 0s;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.j-c-center {
+  justify-content: center;
+}
+
+.j-c-f-end {
+  justify-content: flex-end;
+}
+
+.j-c-between {
+  justify-content: space-between;
+}
+
+.j-c-around {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.green {
+  color: $green !important;
+}
+
+.error {
+  color: rgba(255, 0, 0, 0.6) !important;
+  font-size: 14px !important;
+}
+
+.is-invalid {
+  border-color: $red;
+  color: $red;
+
+  &-block {
+    .label {
+      position: relative;
+
+      &:after {
+        content: "*";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 5px;
+        height: 5px;
+      }
+    }
+
+    .label-icon {
+      background: #E1EBFF;
+      border-right-color: $red !important;
+      color: $red !important;
+    }
+
+    input {
+      border-color: $red !important;
+      box-shadow: 0 0 4px 1px rgba(224, 33, 33, 0.3) !important;
+
+      &::-webkit-input-placeholder {
+        color: $red;
+      }
+      &::-moz-placeholder {
+        color: $red;
+      }
+      &:-ms-input-placeholder {
+        color: $red;
+      }
+      &:-moz-placeholder {
+        color: $red;
+      }
+    }
+  }
+
+}
+
+.small {
+  font-size: 12px;
+}
+
+.wrong-pass{
+  border:1px solid rgba(255, 0, 0, 0.4);
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.wrong-pass::-webkit-input-placeholder { color: rgba(255, 0, 0, 0.6) }
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.white-block {
+  padding: 40px 95px;
+  background: rgba($white, 0.6);
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}

@@ -1,0 +1,53 @@
+
+.settings, .verification {
+  &-block {
+    max-width: 825px;
+    //padding: 40px 95px;
+    //background: rgba($white, 0.6);
+    //width: 100%;
+    //margin: auto;
+  }
+}
+
+.security-list, .verification-list {
+  li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    + li {
+      margin-top: 20px;
+    }
+
+    &.verification-step--done {
+      justify-content: center;
+    }
+
+    &.verification-step--locked {
+      p, .btn {
+        color: $grayMiddle;
+      }
+    }
+  }
+
+  .btn-link {
+    font-size: 16px;
+    border: none;
+    color: $primary;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .btn[disabled] {
+    background: transparent !important;
+  }
+}
+
+.verification-step--done {
+  p {
+    color: $grayLight;
+    font-size: 12px;
+  }
+}

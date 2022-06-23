@@ -1,0 +1,23 @@
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin: 0 30px 30px;
+  }
+
+  a {
+    border-bottom: 1px solid transparent;
+    color: $dark;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &.router-link-active, &.router-link-exact-active {
+      font-weight: 600;
+      border-bottom-color: $primary;
+    }
+  }
+}

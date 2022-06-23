@@ -1,0 +1,77 @@
+
+.market {
+  &-menu {
+    margin-bottom: 30px;
+
+    li {
+      margin: 0 30px;
+    }
+
+    a {
+      font-size: 24px;
+      line-height: 31px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: $dark;
+      border-bottom: 1px solid transparent;
+
+      &.router-link-active, &.router-link-exact-active {
+        font-weight: 600;
+        border-bottom-color: $primary;
+      }
+    }
+  }
+
+  &-block {
+    padding: 40px;
+    background: $white;
+    max-width: 635px;
+    margin: auto;
+
+    &-header {
+      padding-bottom: 16px;
+      border-bottom: 1px solid $primary;
+      margin-bottom: 32px;
+    }
+
+    &-crypto {
+      margin-bottom: 32px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #000000;
+
+      img {
+        margin-right: 8px;
+      }
+    }
+
+    .crypto-value {
+      opacity: .5;
+      line-height: 17px;
+      padding: 4px 4px 0 12px;
+    }
+
+    .short-list {
+      ul {
+        margin: 16px -12px 0;
+      }
+      li {
+        margin: 12px;
+      }
+      .btn {
+        min-width: 100px;
+      }
+    }
+    &-btns {
+      margin-top: 28px;
+
+      .btn {
+        width: auto;
+        min-width: 180px;
+      }
+    }
+  }
+}

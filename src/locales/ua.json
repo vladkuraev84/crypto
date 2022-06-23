@@ -1,0 +1,10 @@
+{
+  "title": "test ua!",
+  "dashboard": {
+    "withdraw": "Знімайте ",
+    "your": "свою ",
+    "crypto": "криптовалюту ",
+    "inYourLocalCur": "у місцевій валюті ",
+    "instantly": "миттєво"
+  }
+}

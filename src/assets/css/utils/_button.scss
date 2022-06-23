@@ -1,0 +1,174 @@
+.btn {
+  font-family: 'HindMadurai', sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px 6px;
+  background: transparent;
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 1.31;
+  width: 100%;
+  min-height: 40px;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+      @media only screen and (min-width: 901px) {
+        &:hover {
+          background: transparent;
+          -webkit-transition: .35s all;
+          -moz-transition: .35s all;
+          -o-transition: .35s all;
+          transition: .35s all;
+        }
+        &:hover {
+          -ms-transition: .35s all;
+        }
+      }
+
+  &-primary {
+    background: $primary;
+    color: #ffffff;
+
+    @media only screen and (min-width: 901px) {
+      &:hover {
+        background-color: $primaryLightHover;
+      }
+    }
+  }
+
+  &-white {
+    background: $white;
+    border: 1px solid $primary;
+    color: $dark;
+    font-weight: 600;
+    position: relative;
+
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+
+    @media only screen and (min-width: 901px) {
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+
+  &-link {
+    color: $dark;
+    font-size: 18px;
+    min-height: auto;
+    padding: 0 0 3px;
+    width: auto;
+    display: inline-flex;
+    border-bottom: 1px solid #4C5057;
+
+    &:hover {
+      border-bottom-color: $primary;
+      color: $primary !important;
+    }
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    background: $red !important;
+    opacity: .75;
+  }
+
+  &-active {
+    background: $white;
+    border: 1px solid rgba(16, 104, 193, 0.15);
+    box-shadow: 0 0 4px 1px rgba(16, 104, 193, 0.3);
+
+    @media only screen and (min-width: 901px) {
+      &:hover {
+        background: $white !important;
+      }
+    }
+  }
+
+  &-out {
+    width: auto;
+    padding: 0;
+    min-height: auto;
+
+    svg {
+      max-width: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  &-tab {
+    @media only screen and (min-width: 901px) {
+      &:hover {
+        background-color: $whiteHover;
+      }
+    }
+  }
+
+  &-close {
+    font-size: 0;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    min-height: auto;
+    padding: 2px;
+    background: $white;
+    position: relative;
+    
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 10px;
+      background: black;
+      display: block;
+      transition: .17s all;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      &:after, &:before {
+        background: $white;
+      }
+    }
+  }
+
+  &.disabled, &[disabled] {
+    //background: $isInvalid !important;
+    background: transparent !important;
+    border-color: $isInvalid;
+    color: $red;
+    pointer-events: none;
+  }
+
+  &.not-allowed {
+    cursor: not-allowed;
+    background: $isInvalid !important;
+    border-color: $isInvalid;
+    color: $red;
+  }
+}
+

@@ -1,0 +1,15 @@
+
+.not-logged {
+  .btn-link {
+    color: $primary;
+    border-bottom-color: transparent;
+
+    &:hover {
+      border-bottom-color: $primary;
+    }
+  }
+}
+
+canvas {
+  background: linear-gradient(180deg, rgba(249, 251, 254, 0.59) -2.45%, #C5D5ED 100%);
+}
